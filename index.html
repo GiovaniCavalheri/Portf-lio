@@ -1,123 +1,240 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio</title>
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Portfólio Giovani Cavalheri</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Developer <span>Cavalheri</span></h1>
-      <nav>
-        <ul class="primary-navigation">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Cabeçalho -->
+    <header class="header-glass">
+      <div class="container">
+        <h1 class="logo">Dev<span>Cavalheri</span></h1>
+        <nav class="nav-desktop">
+          <a href="#home" class="active">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button class="menu-mobile"><i class="fas fa-bars"></i></button>
+      </div>
     </header>
-    <section aria-label="sessão de dowload meu curriculo" class="section-div">
-      <div>
-        <h2>Olá! Prazer, sou o</h2>
-        <h2><span class="digitando">Giovani Cavalheri</span><span class="cursor">|</span></h2>
-        <p>Olá! Meu nome é Giovani Inocêncio Cavalheri, <br> Tenho 18 anos e atualmente estou cursando Análise e Desenvolvimento de Sistemas,<br> no segundo termo da faculdade.</p>
-        <a href="doc/Curriculo-Giovani-Atualizado.pdf" type="application/pdf">Download Currículo</a>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>
+              Olá, eu sou <span class="typing">Giovani Cavalheri</span
+              ><span class="cursor"></span>
+            </h2>
+            <p class="subtitle">
+              Estudante de Análise e Desenvolvimento de Sistemas
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="doc/Curriculo-Giovani-Atualizado.pdf"
+                download
+                class="btn-primary"
+                >Download CV</a
+              >
+              <a href="#contato" class="btn-secondary">Contato</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="img-myperson/Me.jpeg"
+              alt="Giovani Cavalheri"
+              class="profile-img"
+            />
+          </div>
+        </div>
       </div>
-      <img
-        src="img-myperson/Me.jpeg"
-        alt="Minha própria foto"
-      />
     </section>
-    <main>
-<article aria-label="section about me" class="about" id="about">
-  <div class="title-about">
-    <h1>About Me</h1>
-    <p>Iniciante Profile - There is All About me</p>
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
-  <div class="about-container">
-    <img
-      src="img-myperson/Me.jpeg"
-      alt="Giovani Cavalheri"
-    />
-    <div class="about-content">
-      <h2>I'm Giovani Cavalheri</h2>
-      <p>
-        Me chamo Giovani Inocêncio Cavalheri, tenho 18 anos e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no segundo termo da graduação. <br>Sempre tive curiosidade sobre como a tecnologia funciona por trás das interfaces, o que me levou a focar meus estudos. <br>Tenho aprendendo desenvolvimento web, com domínio básico de HTML, CSS e JavaScript, mas meu verdadeiro interesse está na construção de soluções mais profundas, voltadas ao funcionamento interno dos sistemas. Estou em busca da minha primeira oportunidade como estagiário na área de tecnologia,<br> onde eu possa aplicar meus conhecimentos, aprender com profissionais experientes e crescer como desenvolvedor.
-      </p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:developer.cavalheri@gmail.com">developer.cavalheri@gmail.com</a>
-      </p>
-      <p>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/GiovaniCavalheri" target="_blank">github.com/GiovaniCavalheri</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/giovani-cavalheri-798096316/" target="_blank">linkedin.com/in/giovani-cavalheri</a>
-      </p>
-    </div>
-  </div>
-</article>
+    <!-- Sobre Mim -->
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Sobre <span>Mim</span></h2>
+        <div class="about-grid">
+          <div class="about-img">
+            <img src="img-myperson/Me.jpeg" alt="Giovani Cavalheri" />
+          </div>
+          <div class="about-text">
+            <h3>Desenvolvedor em Formação</h3>
+            <p>
+              Tenho 18 anos e estou cursando Análise e Desenvolvimento de
+              Sistemas. Apaixonado por tecnologia e em busca da minha primeira
+              oportunidade na área.
+            </p>
 
-<section id="projetos" class="projects-section">
-  <div class="projects-title">
-    <h2>Meus Projetos</h2>
-    <p>Alguns dos exercícios que desenvolvi como parte do meu aprendizado.</p>
-  </div>
+            <div class="about-info">
+              <p>
+                <i class="fas fa-envelope"></i> developer.cavalheri@gmail.com
+              </p>
+              <p>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/GiovaniCavalheri" target="_blank"
+                  >github.com/GiovaniCavalheri</a
+                >
+              </p>
+              <p>
+                <i class="fab fa-linkedin"></i>
+                <a
+                  href="https://www.linkedin.com/in/giovani-cavalheri-798096316/"
+                  target="_blank"
+                  >linkedin.com/in/giovani-cavalheri</a
+                >
+              </p>
+            </div>
 
-  <div class="projects-container">
-    <div class="project-card">
-      <h3>Validando Formulário</h3>
-      <p>Projeto onde treinei lógica com HTML, CSS e JavaScript.</p>
-      <span>Tecnologias: HTML, CSS, JS</span>
-      <div class="project-links">
-        <a href="https://github.com/GiovaniCavalheri/exx.Validando-Form/" target="_blank">🔗 Ver Projeto</a>
+            <div class="skills">
+              <h4>Habilidades:</h4>
+              <div class="skills-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+                <span>Webpack</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-</section>
+    </section>
 
-<section aria-label="Seção de contato" class="contact-section" id="contact">
-  <div class="title-about">
-    <h1>Contact</h1>
-    <p>Let's get in touch</p>
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+    <section id="projetos" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Meus <span>Projetos</span></h2>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Validação de Formulário</h3>
+              <p>Projeto com validação em tempo real usando JavaScript.</p>
+              <div class="project-techs">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a
+                href="https://github.com/GiovaniCavalheri/exx.Validando-Form/"
+                target="_blank"
+                class="btn-code"
+              >
+                <i class="fab fa-github"></i> Ver Código
+              </a>
+            </div>
+          </div>
 
-  <div class="contact-container">
-    <form class="contact-form" action="https://formspree.io/f/mdkzonak" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+          <!-- 2 -->
+          <div class="project-card">
+            <div class="project-info">
+              <h3>Configuração Webpack</h3>
+              <p>Template moderno para projetos com o Webpack.</p>
+              <div class="project-techs">
+                <span>Webpack</span>
+                <span>Babel</span>
+                <span>JavaScript</span>
+              </div>
+              <a
+                href="https://github.com/GiovaniCavalheri/webpack-init"
+                target="_blank"
+                class="btn-code"
+              >
+                <i class="fab fa-github"></i> Ver Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> developer.cavalheri@gmail.com</p>
-      <p><i class="fab fa-github"></i> github.com/GiovaniCavalheri</p>
-      <p><i class="fab fa-linkedin"></i> linkedin.com/in/giovani-cavalheri</p>
-    </div>
-  </div>
-</section>
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Entre em <span>Contato</span></h2>
+        <div class="contact-grid">
+          <form
+            action="https://formspree.io/f/mdkzonak"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Seu Nome" />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Seu E-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                type="message"
+                name="message"
+                placeholder="Sua Mensagem"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
 
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>developer.cavalheri@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/GiovaniCavalheri" target="_blank"
+                >GiovaniCavalheri</a
+              >
+            </div>
+            <div class="info-item">
+              <i class="fab fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/giovani-cavalheri-798096316/"
+                target="_blank"
+                >Giovani Cavalheri</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Giovani Cavalheri. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="https://github.com/GiovaniCavalheri" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/giovani-cavalheri-798096316/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:developer.cavalheri@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
